@@ -1,93 +1,148 @@
-<h1 align="center">💪 AI Fitness Assistant 🤖</h1>
+🏋️‍♂️ CodeFlex AI – AI Fitness Coach
 
-![Demo App](/public/screenshot-for-readme.png)
+CodeFlex AI is an AI-powered fitness coaching web application that enables users to have real-time voice conversations with an AI assistant to receive personalized fitness and diet guidance.
 
-## Highlights:
+The project focuses on voice-based AI interaction, real-time communication, and scalable full-stack architecture, making it an ideal showcase of modern web and AI technologies.
 
-- 🚀 Tech stack: Next.js, React, Tailwind & Shadcn UI
-- 🎙️ Voice AI Assistant (Vapi)
-- 🧠 LLM Integration (Gemini AI)
-- 🏋️ Personalized Workout Plans
-- 🥗 Custom Diet Programs
-- 🔒 Authentication & Authorization (Clerk)
-- 💾 Database (Convex)
-- 🎬 Real-time Program Generation
-- 💻 Layouts
-- 🎭 Client & Server Components
+🚀 Features
 
-## Features
+🎙️ Real-time AI voice conversation
 
-- **Smart AI Assistant**: Engage in conversation with an AI that asks about your fitness goals, physical condition, and preferences
-- **Personalized Workout Plans**: Get custom exercise routines based on your fitness level, injuries, and goals
-- **Diet Recommendations**: Receive personalized meal plans accounting for your allergies and dietary preferences
-- **User Authentication**: Sign in with GitHub, Google, or email/password
-- **Program Management**: Create and view multiple fitness programs with only the latest one active
-- **Responsive Design**: Beautiful UI that works across all devices
+🧠 AI-powered fitness & diet guidance
 
-## Setup .env file
+🔊 Low-latency speech interaction using WebRTC
 
-```js
-# Clerk Authentication
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
+📝 Live speech-to-text transcription
 
-# Clerk Redirect URLs
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+👤 Secure authentication & user profiles with Clerk
 
-# Vapi Voice AI
-NEXT_PUBLIC_VAPI_WORKFLOW_ID=
-NEXT_PUBLIC_VAPI_API_KEY=
+📊 Structured backend schema for fitness plans using Convex
 
-# Convex Database
-CONVEX_DEPLOYMENT=
-NEXT_PUBLIC_CONVEX_URL=
-```
+💻 Responsive, modern UI with Next.js App Router
 
-## Getting Started
+🛠️ Tech Stack
+Frontend
 
-1. Clone the repository
-2. Install dependencies:
+Next.js (App Router)
 
-```shell
+React
+
+TypeScript
+
+Tailwind CSS
+
+AI & Voice
+
+Vapi Web SDK
+
+LLM-based Conversational AI
+
+WebRTC (Daily)
+
+Backend / Data
+
+Convex
+
+Schema design
+
+Mutations & queries for fitness plans
+
+Active/inactive plan management
+
+Authentication
+
+Clerk
+
+Tooling
+
+Node.js
+
+npm
+
+Git & GitHub
+
+📂 Project Structure
+<img width="832" height="578" alt="image" src="https://github.com/user-attachments/assets/798cd1d6-ef83-4595-b871-4712be12a790" />
+
+
+⚙️ Getting Started
+1️⃣ Clone the repository
+git clone https://github.com/aaditripi18/codeflex-ai.git
+cd codeflex-ai
+
+2️⃣ Install dependencies
 npm install
-```
 
-3. Set up your environment variables as shown above
-4. Run the development server:
+3️⃣ Environment Variables
 
-```shell
+Create a .env.local file in the project root:
+
+NEXT_PUBLIC_VAPI_API_KEY=your_vapi_api_key
+NEXT_PUBLIC_VAPI_ASSISTANT_ID=your_vapi_assistant_id
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+
+
+⚠️ .env.local is ignored by Git and should never be committed.
+
+4️⃣ Run Convex (optional – backend)
+npx convex dev
+
+
+This generates Convex backend bindings and enables data persistence.
+
+5️⃣ Start the development server
 npm run dev
-```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Deployment
+Open:
 
-This application can be easily deployed to Vercel:
+http://localhost:3000
 
-```shell
-npm run build
-npm run start
-```
+🧠 How It Works
 
-Or connect your GitHub repository to Vercel for automatic deployments.
+User logs in using Clerk authentication
 
-## Technologies Used
+User starts a voice call with the AI fitness coach
 
-- **Next.js**: React framework for building the frontend and API routes
-- **Tailwind CSS & Shadcn UI**: For styling and UI components
-- **Clerk**: Authentication and user management
-- **Vapi**: Voice agent platform for conversational AI
-- **Convex**: Real-time database
-- **Gemini AI**: Large Language Model for generating personalized fitness programs
+AI listens, responds, and guides the user in real time
 
-## Learn More
+Conversation state and transcripts are handled on the frontend
 
-To learn more about the technologies used in this project:
+Fitness plan data models are designed using Convex for scalability
 
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Clerk Documentation](https://clerk.com/docs)
-- [Vapi Documentation](https://docs.vapi.ai)
-- [Convex Documentation](https://docs.convex.dev)
-- [Gemini AI Documentation](https://ai.google.dev/gemini-api)
+📌 Notes
+
+The project emphasizes real-time AI interaction, not just text prompts
+
+Backend persistence with Convex is designed and extensible
+
+Ideal for showcasing AI + WebRTC + full-stack system design
+
+🎯 Use Cases
+
+AI-powered personal fitness coaching
+
+Voice-enabled wellness applications
+
+Conversational AI demos
+
+Full-stack AI project for resumes & portfolios
+
+📄 License
+
+This project is licensed under the MIT License.
+
+🙌 Author
+
+Aaditya Tripathi
+GitHub: @aaditripi18
+
+✅ After adding this README
+
+Run:
+
+git add README.md
+git commit -m "Add project README"
+git push
