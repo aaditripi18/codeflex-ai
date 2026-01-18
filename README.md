@@ -130,10 +130,6 @@ Conversational AI demos
 
 Full-stack AI project for resumes & portfolios
 
-📄 License
-
-This project is licensed under the MIT License.
-
 🙌 Author
 
 Aaditya Tripathi
